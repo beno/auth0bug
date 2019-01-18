@@ -94,4 +94,10 @@ window.addEventListener('load', function() {
   }
 
   handleAuthentication();
+  if (isAuthenticated()) {
+    console.log("Start App...");
+  } else {
+    webAuth.authorize();
+  }
+  
 });
